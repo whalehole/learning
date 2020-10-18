@@ -1,0 +1,132 @@
+body {
+    background-color: rgb(235, 235, 235);
+}
+body * {
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+header {
+    position: fixed;
+}
+header h1 {
+    font-family: 'Homemade Apple', cursive;
+}
+header a:link {
+    color: black;
+    text-decoration: none;
+}
+header a:visited {
+    color: black;
+}
+header a:hover {
+    color: pink;
+}
+#bodyContainer {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 100%;
+    row-gap: 20px;
+}
+#directory {
+    padding: 20px;
+}
+#directory p {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Homemade Apple', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    float: left;
+    border-radius: 20px;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#directory a:nth-of-type(2) p {
+    background-color: pink;
+    color: white;
+}
+#directory a:nth-of-type(2):hover p {
+    color: black;
+}
+#directory a:link {
+    color: black;
+}
+#directory a:visited {
+    color: black;
+}
+#directory a:hover p {
+    background-color: pink;
+}
+.alignLeft {
+    text-align: left;
+}
+.noBulletStyle {
+    list-style-type: none;
+}
+footer div {
+    width: 1000px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+footer p {
+    display: block;
+    padding: 20px;
+    font-style: italic;
+}
+#box1 {
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    column-gap: 20px;
+}
+#box1 img {
+    display: block;
+    width: 80%;
+    height: 150px;
+    object-fit: contain;
+    margin: auto;
+    margin-top: 5px;
+}
+#currency {
+    float: right;
+    margin-top: 20px;
+}
+.productID {
+    font-size: 10px;
+    color: lightgrey;
+    display: inline-block;
+    margin: auto;
+}
+#box1 > div > div:nth-of-type(1) {
+    width: 100px;
+    margin: auto;
+}
+#box1 > div > div:nth-of-type(2){
+    width: 200px;
+    margin: auto;
+}
+.details {
+    margin-top: 0;
+}
+.productHeadings {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.currency, .price {
+    display: inline-block;
+}
+#box1 > div > div:nth-of-type(2) > button {
+    margin-bottom: 100px;
+}

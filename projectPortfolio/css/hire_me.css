@@ -1,0 +1,229 @@
+body {
+    background-color: rgb(235, 235, 235);
+}
+body * {
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+header {
+    position: fixed;
+}
+header h1 {
+    font-family: 'Homemade Apple', cursive;
+}
+header a:link {
+    color: black;
+    text-decoration: none;
+}
+header a:visited {
+    color: black;
+}
+header a:hover {
+    color: pink;
+}
+#bodyContainer {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    display: grid;
+    grid-auto-rows: minmax(100px,auto);
+    row-gap: 20px;
+}
+#directory {
+    padding: 20px;
+}
+#directory p {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Homemade Apple', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    float: left;
+    border-radius: 20px;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#directory a:nth-of-type(1) p {
+    background-color: pink;
+    color: white;
+}
+#directory a:nth-of-type(1):hover p {
+    color: black;
+}
+#directory a:link {
+    color: black;
+}
+#directory a:visited {
+    color: black;
+}
+#directory a:hover p {
+    background-color: pink;
+}
+/* box1_personal information */
+#box1 {
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+    height: 200px;
+}
+#box1 > img {
+    height: 100%;
+    border-radius: 20px;
+    float: left;
+}
+#box1 > table {
+    margin-left: 20px;
+    border-radius: 20px;
+    float: left;
+}
+#box1 td {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#box1 td:nth-child(1) {
+    font-weight: bold;
+}
+label + p {
+    margin-top: 0;
+}
+label > a {
+    display: inline-block;
+    padding: 5px;
+    margin-top: 5px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+label > a:hover {
+    background-color: pink;
+}
+#socialContainer {
+    /* grid */
+    display: grid;
+    grid-template-columns: repeat(2, 40px);
+    grid-template-rows: repeat(1, 50px);
+    column-gap: 10px;
+}
+#socialContainer > td a {
+    display: block;
+    height: 40px;
+}
+#socialContainer > td img {
+    height: 100%;
+}
+/* box2_merits information */
+#box2 {
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+}
+#box2 > div {
+    /* grid */
+    display: grid;
+    box-sizing: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+#box2 > div > div:nth-child(2) li {
+    margin-bottom: 20px;
+}
+/* box3_fun information */
+#box3 {
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+}
+#box3 > div {
+    /* grid */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    row-gap: 20px;
+}
+#box3 > div > a {
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+#box3 > div > a > img {
+    display: block;
+    height: 100%;
+    object-fit: contain;
+}
+#box4 {
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+}
+#box4 > a {
+    display: inline-block;
+    padding: 5px;
+    margin-top: 5px;
+    margin-right: 15px;
+    background-color: lightcyan;
+    border-radius: 10px;
+    border: cyan 1px solid;
+}
+#box4 > a:hover {
+    background-color: pink;
+}
+#box5 {
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+}
+.alignLeft {
+    text-align: left;
+}
+.schoolLogos {
+    display: block;
+    object-fit: contain;
+    height: 80px;
+    width: 100%;
+}
+.workExperienceLogos {
+    display: block;
+    object-fit: contain;
+    height: 80px;
+    width: 100%;
+}
+.internshipLogos {
+    display: block;
+    object-fit: contain;
+    height: 80px;
+    width: 100%;
+}
+.noBulletStyle {
+    list-style-type: none;
+}
+form li {
+    margin-bottom: 10px;
+}
+form input[type=text], input[type=email] {
+    width: 300px;
+}
+footer div {
+    width: 1000px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+form li:nth-child(3) {
+    margin-top: 25px;
+}
+footer p {
+    display: block;
+    padding: 20px;
+    font-style: italic;
+}

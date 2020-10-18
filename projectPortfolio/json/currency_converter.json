@@ -1,0 +1,24 @@
+{
+    "singapore dollar": {
+        "singapore dollar": {
+            "rate": 1,
+            "sign": "SG$"
+        },
+        "united states dollar": {
+            "rate": 0.74,
+            "sign": "US$"
+        },
+        "indian rupee": {
+            "rate": 54.04,
+            "sign": "Indian Rupee"
+        },
+        "japanese yen": {
+            "rate": 77.55,
+            "sign": "¥"
+        },
+        "philipine peso": {
+            "rate": 35.81,
+            "sign": "₱"
+        }
+    }
+}
