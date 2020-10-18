@@ -9,7 +9,7 @@
     <!-- ajax GET -->
     <script>
         function loadDoc() {
-            var xhttp = new XMLHttpRequest;
+            var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     $("#pride").html(this.responseText);
@@ -19,7 +19,7 @@
             xhttp.send();
         }
         function loadName() {
-            var xhttp = new XMLHttpRequest;
+            var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     var name = JSON.parse(this.responseText);
