@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+
+    <script src="jQuery/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            console.log("ready to go");
+            console.log(document.querySelector("h1")); 
+            console.log(document.querySelector(".alpha"));
+            var demo = document.querySelector(".alpha")
+            $("#pride").html(demo);
+        })
+    </script>
+</head>
+<body>
+    <h1>demo heading 3</h1>
+    <h1 class="alpha">demo heading 2</h1>
+    <h1 class="alpha">demo heading 1</h1>
+    <h1 id="pride">still not changed :(</h1>
+</body>
+</html>
+
+<!-- conclusion -->
+<!-- querySelector will select the first element(with its content) among the elements that belong to the chosen selector, in this case "h1" & ".alpha". -->
+<!-- the result of querySelector is not a value, it points to the element that will be used for changes, like css. that means it won't create another copy that can be put into an object -->
