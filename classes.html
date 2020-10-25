@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Player {
+            constructor(username, age) {
+                this.username = username;
+                this.age = age;
+            }
+            about() {
+                console.log(`This player is called ${this.username}`);
+            }
+        }
+        class Assassin extends Player {
+            constructor(agility, weapon, username) {
+                super(username);
+                this.agility = agility;
+                this.weapons = [weapon];
+            }
+            speech() {
+                console.log("I am coming for you.");
+            }
+        }
+        class Mage extends Player {
+            constructor(intelligence, weapon, username) {
+                super(username);
+                this.intelligence = intelligence;
+                this.weapons = [weapon];
+            }
+            speech() {
+                console.log("More mana!");
+            }
+        }
+        
+    </script>
+</body>
+</html>
