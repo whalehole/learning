@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create element</title>
+
+    <script src="jQuery/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function() {
+            console.log("document is ready.");
+            document.getElementById("h1").appendChild(document.createTextNode("It worked!"));
+            let para = document.createElement("p");
+            let textNode = document.createTextNode("Hello there.");
+            para.appendChild(textNode);
+            console.log(para);
+            document.getElementById("div").appendChild(para);
+        })
+    </script>
+    <style>
+        div > p {
+            color: blue;
+        }
+        div + p {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">
+
+    </h1>
+    <div id="div">
+
+    </div>
+    <p id="p">Hello there.</p>
+</body>
+</html>
