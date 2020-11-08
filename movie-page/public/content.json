@@ -1,0 +1,113 @@
+{
+    "forAllAges": [
+        {
+            "title": "<b>Title:</b> Pokémon: The First Movie - Mewtwo Strikes Back",
+            "image": "images-movies/01.jpg",
+            "description": "<b>Sypnosis:</b> Ash, Misty, Brock, and several other Pokémon trainers travel to an island, under the pretense that they will be battling a superior Pokémon trainer, only to discover the genetically engineered Pokémon Mewtwo, created by a scientist for Giovanni of Team Rocket, is there and is planning to take over the world with other cloned Pokémon.",
+            "releaseDate": "<b>Release date:</b> November 10, 1999",
+            "moreDetails": ""
+        },
+        {
+            "title": "<b>Title:</b> Pokémon: The Movie 2000 - The Power of One",
+            "image": "images-movies/02.jpg",
+            "description": "<b>Sypnosis:</b> Ash, Misty, and Tracey visit Shamouti Island where Ash is roped into a festival honoring Articuno, Zapdos, and Moltres, all of whom are being captured by Lawrence III, a Pokémon Collector who also wants to capture the legendary Pokémon Lugia.",
+            "releaseDate": "<b>Release date:</b> July 21, 2000",
+            "moreDetails": ""
+        },
+        {
+            "title": "<b>Title:</b> Pokémon 3: The Movie - Spell of the Unknown",
+            "image": "images-movies/03.jpg",
+            "description": "<b>Sypnosis:</b> Ash, Misty, and Brock try to retrieve Ash's mother from Molly Hale, a lonely little girl whose father has disappeared and is being taken care of by the Pokémon Unown who have created an illusion of the Legendary Pokémon Entei.",
+            "releaseDate": "<b>Release date:</b> April 6, 2001",
+            "moreDetails": ""
+        },
+        {
+            "title": "<b>Title:</b> Pokémon 4Ever: Celebi - Voice of the Forest",
+            "image": "images-movies/04.jpg",
+            "description": "<b>Sypnosis:</b> Ash, Misty, and Brock meet up with Sammy, a boy from 40 years in the past, and the Mythical Pokémon Celebi, who is being hunted down by the evil Iron-Masked Marauder of Team Rocket.",
+            "releaseDate": "<b>Release date:</b> October 11, 2002",
+            "moreDetails": ""
+        },
+        {
+            "title": "<b>Title:</b> Pokémon Heroes: Latios and Latias",
+            "image": "images-movies/05.jpg",
+            "description": "<b>Sypnosis:</b> Ash, Misty, and Brock's trip to the city of Alto Mare is interrupted when two thieves called Annie and Oakley try to steal the Soul Dew, a crystal that holds the essence of the Legendary Pokémon Latios and Latias, which is also required to keep the city safe.",
+            "releaseDate": "<b>Release date:</b> May 16, 2003",
+            "moreDetails": ""
+        }
+    ],
+    "NSFW": [
+        {
+            "title": "<b>Title:</b> Jujutsu Kaisen",
+            "image": "images-movies/02_01.jpg",
+            "description": "<b>Sypnosis:</b> In a world where demons feed on unsuspecting humans, fragments of the legendary and feared demon Ryoumen Sukuna were lost and scattered about. Should any demon consume Sukuna's body parts, the power they gain could destroy the world as we know it. Fortunately, there exists a mysterious school of Jujutsu Sorcerers who exist to protect the precarious existence of the living from the undead! Yuuji Itadori is high schooler who spends his days visiting his bedridden grandfather. Although he looks like your average teenager, his immense physical strength is something to behold! Every sports club wants him to join, but Itadori would rather hang out with the school outcasts in the Occult Club. One day, the club manages to get their hands on a sealed cursed object, but little do they know the terror they'll unleash when they break the seal...",
+            "releaseDate": "<b>Release date:</b> Oct 3, 2020",
+            "moreDetails": ""
+        },
+        {
+            "title": "<b>Title:</b> Haikyuu!!: To the Top 2nd Season",
+            "image": "images-movies/02_02.jpg",
+            "description": "<b>Sypnosis:</b> Second half of Haikyuu!!: To the Top.",
+            "releaseDate": "<b>Release date:</b> Oct 3, 2020",
+            "moreDetails": ""
+        },
+        {
+            "title": "<b>Title:</b> Majo no Tabitabi",
+            "image": "images-movies/02_03.jpg",
+            "description": "<b>Sypnosis:</b> Once upon a time, there was a witch named Elaina, who set off on a journey across the world. Along the way, she would meet all kinds of people, from a country full of witches to a giant in love with his own muscles—but with each meeting, Elaina would become a small part of their story, and her own world would get a little bit bigger.",
+            "releaseDate": "<b>Release date:</b> Oct 2, 2020",
+            "moreDetails": ""
+        },
+        {
+            "title": "<b>Title:</b> Noblesse",
+            "image": "images-movies/02_04.jpg",
+            "description": "<b>Sypnosis:</b> Raizel awakens from his 820-year slumber. He holds the special title of Noblesse which is a pure-blooded Noble and protector of all other Nobles. In an attempt to protect Raizel, his servant Frankenstein enrolls him at Ye-Ran High School, where Raizel learn the simple and quotidian routines of the human world through his classmates. However, the Union—a mighty secret organization with strings around the globe and a goal to rule the world—dispatches modified humans and gradually encroaches on Raizel's life progressively—which causes him to wield his mighty power to protect those around him. After 820 years of intrigue, the secrets behind his slumber are finally revealed and Raizel's absolute protection as the Noblesse begins.",
+            "releaseDate": "<b>Release date:</b> Oct 8, 2020",
+            "moreDetails": ""
+        },
+        {
+            "title": "<b>Title:</b> Mahouka Koukou no Rettousei: Raihousha-hen",
+            "image": "images-movies/02_05.jpg",
+            "description": "<b>Sypnosis:</b> Shiba Miyuki's classmate Kitayama Shizuku is on her way to study abroad. For magicians, this is normally impossible, since allowing the genes of someone who can use magic outside their home country's borders is tantamount to giving up national secrets. But it's allowed to happen in one case-exchange programs. And that's how Angelina Kudou Shields has arrived in Japan from the USNA to study at First High. Around the time Lina arrived in Japan magicians began getting attacked by a mysterious being who leaves his victims drained of blood. Will Tatsuya be able to discover the identity of the \"Vampire\"?",
+            "releaseDate": "<b>Release date:</b> Oct 4, 2020",
+            "moreDetails": ""
+        }
+    ],
+    "veryAdult": [
+        {
+            "title": "<b>Title:</b> Finding Nemo",
+            "image": "images-movies/03_01.jpg",
+            "description": "<b>Sypnosis:</b> After his son gets abducted from the Great Barrier Reef and is dispatched to Sydney, Marlin, a meek clownfish, enlists the help of a forgetful fish and embarks on a journey to bring him home.",
+            "releaseDate": "<b>Release date:</b> Jun 6, 2003",
+            "moreDetails": ""
+        },
+        {
+            "title": "<b>Title:</b> Frozen",
+            "image": "images-movies/03_02.jpg",
+            "description": "<b>Sypnosis:</b> Anna sets out on a journey with an iceman, Kristoff, and his reindeer, Sven, in order to find her sister, Elsa, who has the power to convert any object or person into ice.",
+            "releaseDate": "<b>Release date:</b> Nov 28, 2013",
+            "moreDetails": ""
+        },
+        {
+            "title": "<b>Title:</b> My Neighbor Totoro",
+            "image": "images-movies/03_03.jpg",
+            "description": "<b>Sypnosis:</b> Mei and Satsuki shift to a new house to be closer to their mother who is in the hospital. They soon become friends with Totoro, a giant rabbit-like creature who is a spirit.",
+            "releaseDate": "<b>Release date:</b> Apr 16, 1988",
+            "moreDetails": ""
+        },
+        {
+            "title": "<b>Title:</b> Toy Story (1995)",
+            "image": "images-movies/03_04.jpg",
+            "description": "<b>Sypnosis:</b> Andy's favourite toy, Woody, is worried that after Andy receives his birthday gift, a new toy called Buzz Lightyear, his importance may get reduced. He thus hatches a plan to eliminate Buzz.",
+            "releaseDate": "<b>Release date:</b> Mar 7, 1996",
+            "moreDetails": ""
+        },
+        {
+            "title": "<b>Title:</b> Despicable Me",
+            "image": "images-movies/03_05.jpg",
+            "description": "<b>Sypnosis:</b> Gru, a criminal mastermind, adopts three orphans as pawns to carry out the biggest heist in history. His life takes an unexpected turn when the little girls see him as their potential father.",
+            "releaseDate": "<b>Release date:</b> Jul 8, 2010",
+            "moreDetails": ""
+        }
+    ]
+}

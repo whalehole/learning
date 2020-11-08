@@ -4,3 +4,40 @@ h1 {
 h2 {
     color: blue;
 }
+#header {
+    height: 50px;
+    margin-bottom: 50px;
+}
+#categories {
+    margin-bottom: 30px;
+}
+#categories > button {
+    color: green;
+}
+#moviesList > div {
+    margin-bottom: 50px;
+    border-bottom: lightgray solid 2px;
+}
+#logo {
+    height: 30px;
+    margin-right: 20px;
+    float: left;
+}
+#navigation {
+    float: left;
+}
+#navigation > a {
+    margin-right: 13px;
+}
+#navigation > a:link {
+    text-decoration: none;
+}
+#navigation > a:visited {
+    text-decoration: none;
+}
+#navigation > a:hover {
+    text-decoration: none;
+}
+#navigation > a:active {
+    text-decoration: none;
+}
