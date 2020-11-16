@@ -1,0 +1,86 @@
+[
+    {
+        "game": "World of Warcraft",
+        "logo": "eventAssets/WoW.jpg",
+        "titleOfEvent": "Naxxramas",
+        "descriptionOfEvent": "Raid",
+        "startDateOfEvent": "16 Sep 2020",
+        "startTimeOfEvent": "",
+        "startTimeObject": "September 16, 2020",
+        "endDateOfEvent": "23 Sep 2020",
+        "endTimeOfEvent": "10:00 pm",
+        "endTimeObject": "September 23, 2020 22:00:00"
+    },
+    {
+        "game": "Genshin Impact",
+        "logo": "eventAssets/GenshinImpact.png",
+        "titleOfEvent": "Let's dive",
+        "descriptionOfEvent": "Guys, Genshin Impact is releasing on 28 September, let's play together. Get on discord.",
+        "startDateOfEvent": "28 Sep 2020",
+        "startTimeOfEvent": "10:00 am",
+        "startTimeObject": "September 28, 2020 10:00:00",
+        "endDateOfEvent": "",
+        "endTimeOfEvent": "",
+        "endTimeObject": ""
+    },
+    {
+        "game": "Dota 2",
+        "logo": "eventAssets/Dota2.jpg",
+        "titleOfEvent": "Scrim",
+        "descriptionOfEvent": "In house, LETS ROLL!!",
+        "startDateOfEvent": "30 Sep 2020",
+        "startTimeOfEvent": "3:00 pm",
+        "startTimeObject": "September 30, 2020 15:00:00",
+        "endDateOfEvent": "",
+        "endTimeOfEvent": "",
+        "endTimeObject": ""
+    },
+    {
+        "game": "World of Warcraft",
+        "logo": "eventAssets/WoW.jpg",
+        "titleOfEvent": "Naxxramas",
+        "descriptionOfEvent": "Raid. No loot for dumb.",
+        "startDateOfEvent": "20 Nov 2020",
+        "startTimeOfEvent": "10:00 am",
+        "startTimeObject": "November 20, 2020 10:00:00",
+        "endDateOfEvent": "27 Nov 2020",
+        "endTimeOfEvent": "10:00 pm",
+        "endTimeObject": "November 27, 2020 22:00:00"
+    },
+    {
+        "game": "World of Warcraft",
+        "logo": "eventAssets/WoW.jpg",
+        "titleOfEvent": "Hellfire Citadel",
+        "descriptionOfEvent": "",
+        "startDateOfEvent": "28 Nov 2020",
+        "startTimeOfEvent": "10:00 am",
+        "startTimeObject": "November 28, 2020 10:00:00",
+        "endDateOfEvent": "4 Dec 2020",
+        "endTimeOfEvent": "",
+        "endTimeObject": "December 4, 2020"
+    },
+    {
+        "game": "Dota 2",
+        "logo": "eventAssets/Dota2.jpg",
+        "titleOfEvent": "In HOUSE",
+        "descriptionOfEvent": "LET\"S ROLL",
+        "startDateOfEvent": "5 Dec 2020",
+        "startTimeOfEvent": "10:00 am",
+        "startTimeObject": "December 5, 2020 10:00:00",
+        "endDateOfEvent": "",
+        "endTimeOfEvent": "",
+        "endTimeObject": ""
+    },
+    {
+        "game": "League of Legends",
+        "logo": "eventAssets/LoL.jpg",
+        "titleOfEvent": "In house",
+        "descriptionOfEvent": "Let's try this game?",
+        "startDateOfEvent": "10 Dec 2020",
+        "startTimeOfEvent": "10:00 am",
+        "startTimeObject": "December 10, 2020 10:00:00",
+        "endDateOfEvent": "",
+        "endTimeOfEvent": "",
+        "endTimeObject": ""
+    }
+]
