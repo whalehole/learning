@@ -54,7 +54,7 @@ class UpcomingEvents extends React.Component {
                                 {timeTracker}
                                 <h5 class="card-title">{event.titleOfEvent}</h5>
                                 <p class="card-text">{event.descriptionOfEvent}</p>
-                                <a href="/apply" class={buttonSwitch}>Apply</a>
+                                <a to="/apply" class={buttonSwitch}>Join</a>
                             </div>
                         </div>
                     )

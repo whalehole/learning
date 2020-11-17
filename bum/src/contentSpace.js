@@ -141,13 +141,23 @@ class MembersList extends React.Component {
 }
 
 // content 3; Join community form
-class Join extends React.Component {
+class Apply extends React.Component {
     constructor(props) {
         super(props);
     }
     componentDidMount() {
         let form = (
             <form>
+                <div class="row">
+                    <div class="form-group" class="col">
+                        <label for="exampleInputFirstName1">First name</label>
+                        <input type="text" class="form-control" id="exampleInputFirstName1" aria-describedby="firstNameHelp"></input>
+                    </div>
+                    <div class="form-group" class="col">
+                        <label for="exampleInputLastName1">Last name</label>
+                        <input type="text" class="form-control" id="exampleInputLastName1" aria-describedby="lastNameHelp"></input>
+                    </div>
+                </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
@@ -155,8 +165,8 @@ class Join extends React.Component {
                 </div>
                 <div class="form-group">
                     <label for="exampleInputNickname1">Nickname</label>
-                    <input type="text" class="form-control" id="exampleInputNickname1" aria-describedby="NicknameHelp"></input>
-                    <small id="NicknameHelp" class="form-text text-muted">How shall we call you?</small>
+                    <input type="text" class="form-control" id="exampleInputNickname1" aria-describedby="nicknameHelp"></input>
+                    <small id="nicknameHelp" class="form-text text-muted">How shall we call you?</small>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
@@ -191,8 +201,8 @@ class ContentSpace extends React.Component {
                     <nav id="navBar" class="navbar navbar-expand-lg rounded">
                         <Link class="nav-link" to="/home">Home</Link>
                         <Link class="nav-link" to="/members">Members</Link>
-                        <Link to="/join"><button type="button" class="btn btn-outline-success">Join the community</button></Link>
-                        {/* <Link class="nav-link" to="/events">Events</Link> */}
+                        <Link class="ml-auto" to="/signin"><button type="button" class="btn btn-outline-success">Sign in</button></Link>
+                        <Link to="/apply"><button type="button" class="btn btn-outline-success">Apply</button></Link>
                     </nav>
                     {/* content */}
                     <div>
@@ -205,8 +215,8 @@ class ContentSpace extends React.Component {
                         <Route exact path="/members">
                             <MembersList />
                         </Route>
-                        <Route path="/join">
-                            <Join />
+                        <Route path="/apply">
+                            <Apply />
                         </Route>
                     </div>
                 </div>

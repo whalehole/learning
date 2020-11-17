@@ -29,8 +29,14 @@ code {
   margin-bottom: 3vh;
   background-color: white;
 }
+#navBar > a:nth-of-type(3) {
+  margin-right: 16px;
+}SS
 #navBar button {
   float: right;
+}
+#joinCommunityForm > form > div > div {
+  margin-bottom: 16px;
 }
 body {
   background-color: rgb(226, 224, 224);
