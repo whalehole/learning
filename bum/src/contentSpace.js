@@ -15,7 +15,7 @@ import {
 class BlogFeed extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {numberOfBlogs: 3, order: "Most recent"}
+        this.state = {numberOfBlogs: 3, totalNumberOfBlogs: "", order: "Most recent"}
     }
     moreBlogs() {
         let totalBlogs = this.state.numberOfBlogs + 3
@@ -47,7 +47,13 @@ class BlogFeed extends React.Component {
             }
          })
     }
-
+    componentDidUpdate() {
+        if (this.state.numberOfBlogs >= this.state.totalNumberOfBlogs) {
+                $("#moreBlogsButton").attr("disabled", true)
+                $("#moreBlogsButton").attr("class", "btn btn-secondary")
+                $("#moreBlogsButton").html("You have reached the end, bud.")
+        }
+    }
     componentDidMount() {
         // fetching blogs
         $.ajax({
@@ -55,6 +61,7 @@ class BlogFeed extends React.Component {
             dataType: "json",
             url: "data/blogContent.json",
             success: data => {
+                this.setState({totalNumberOfBlogs: data.length})
                 data.reverse().slice(0,3).map(blog => {
                 // displaying blogs on page
                 let blogContainer = document.createElement("DIV")
@@ -85,7 +92,9 @@ class BlogFeed extends React.Component {
                 <div id="moreBlogs">
 
                 </div>
-                <button onClick={() => this.moreBlogs()}>Click for more</button>
+                <div id="moreBlogsButtonContainer">
+                    <button id="moreBlogsButton" class="btn btn-info" onClick={() => this.moreBlogs()}>Click for more</button>
+                </div>
             </div>
          )
      }
@@ -139,54 +148,7 @@ class MembersList extends React.Component {
         )
     }
 }
-
-// content 3; Join community form
-class Apply extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    componentDidMount() {
-        let form = (
-            <form>
-                <div class="row">
-                    <div class="form-group" class="col">
-                        <label for="exampleInputFirstName1">First name</label>
-                        <input type="text" class="form-control" id="exampleInputFirstName1" aria-describedby="firstNameHelp"></input>
-                    </div>
-                    <div class="form-group" class="col">
-                        <label for="exampleInputLastName1">Last name</label>
-                        <input type="text" class="form-control" id="exampleInputLastName1" aria-describedby="lastNameHelp"></input>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputNickname1">Nickname</label>
-                    <input type="text" class="form-control" id="exampleInputNickname1" aria-describedby="nicknameHelp"></input>
-                    <small id="nicknameHelp" class="form-text text-muted">How shall we call you?</small>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1"></input>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        )
-        ReactDOM.render(form, document.getElementById("joinCommunityForm"))
-    }
-
-    render() {
-        return (
-            <div id="joinCommunityForm">
-
-            </div>
-        )
-    }
-
-}
+// Discord
 
 // all content
 class ContentSpace extends React.Component {
@@ -198,25 +160,42 @@ class ContentSpace extends React.Component {
             <Router>
                 <div>
                     {/* navigation */}
-                    <nav id="navBar" class="navbar navbar-expand-lg rounded">
-                        <Link class="nav-link" to="/home">Home</Link>
-                        <Link class="nav-link" to="/members">Members</Link>
-                        <Link class="ml-auto" to="/signin"><button type="button" class="btn btn-outline-success">Sign in</button></Link>
-                        <Link to="/apply"><button type="button" class="btn btn-outline-success">Apply</button></Link>
+                    <nav class="rounded navbar navbar-light bg-light navbar-expand-lg justify-content-between">
+                        <div class="navbar-nav">
+                            <Link to="/home" class="navbar-brand">
+                                <img src="guildAssets/1.png" width="60" height="60" class="d-inline-block align-top rounded" alt="" loading="lazy" />
+                            </Link>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <Link class="nav-link" to="/home">Home <span class="sr-only">(current)</span></Link>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <Link class="nav-link" to="/members">Members</Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <form class="form-inline">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </div>
                     </nav>
                     {/* content */}
-                    <div>
+                    <div  id="content">
                         <Route exact path="/">
                             <BlogFeed />
                         </Route>
-                        <Route path="/home">
+                        <Route exact path="/home">
                             <BlogFeed />
                         </Route>
                         <Route exact path="/members">
                             <MembersList />
-                        </Route>
-                        <Route path="/apply">
-                            <Apply />
                         </Route>
                     </div>
                 </div>

@@ -1,0 +1,1 @@
+$(document).on('hidden.bs.modal', '#signInModal', ()=>{$("#errorMessageLogIn").empty()})

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import ContentSpace from './contentSpace';
 import UpcomingEvents from './upcomingEvents';
+import HeaderPanelRight from './headerPanelRight';
 import reportWebVitals from './reportWebVitals';
 import $ from 'jquery';
 
@@ -18,6 +19,9 @@ ReactDOM.render(
     <UpcomingEvents />, document.getElementById("upcomingEventsContainer")
 )
 
+ReactDOM.render(
+    <HeaderPanelRight />, document.getElementById("headerPanelRight")
+)
 
 reportWebVitals();
 

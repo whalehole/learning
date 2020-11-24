@@ -3,21 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <script src="jQuery/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="resetModal.js"></script>
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
-
     <title>BUM</title>
   </head>
   <body>
     <div class="container-fluid" id="header">
       <div class="row">
-        <div id="userPanel" class="col"></div>
+        <!-- logo -->
+        <div id="headerPanelLeft" class="col">
+        </div>
+        <div id="headerPanelCenter" class="col d-flex align-items-end justify-content-center">
+          <div id="searchBarContainer"></div>
+        </div>
+        <div id="headerPanelRight" class="col"></div>
       </div>
-    </div>
-    <!-- logo -->
-    <div id="logoContainer">
-      <a href="/home"><img class="rounded" id="guildLogo" src="guildAssets/1.png"></a>
     </div>
     <!-- content -->
     <div class="container-sm">
@@ -27,10 +32,6 @@
           <div id="upcomingEventsContainer"></div>
         </div>
       </div>
-    </div>
-      <!-- footer -->
-    <div>
-      <div class="col" id="footer">1</div>
     </div>
   </body>
 </html>
