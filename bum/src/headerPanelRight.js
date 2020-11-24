@@ -21,7 +21,14 @@ class HeaderPanelRight extends React.Component {
                     localStorage.setItem("BUMuserPassword", document.getElementById("exampleInputPassword1").value)
                     localStorage.setItem("BUMloggedInSession", "active")
                     this.userNickName = userLogIn.nickname 
-                    return true
+                    if (document.getElementById("stayLoggedIn").checked == true) {
+                        localStorage.setItem("BUMstayLoggedIn", "yes")
+                        this.setState({loggedIn: true})
+                    }
+                    else {
+                        localStorage.setItem("BUMstayLoggedIn", "no")
+                        this.setState({loggedIn: true})
+                    }
                 }
                 else {
                     let errorMessage = (
@@ -30,23 +37,10 @@ class HeaderPanelRight extends React.Component {
                     ReactDOM.render(errorMessage, document.getElementById("errorMessageLogIn"))
                     $("#exampleInputEmail1").val("")
                     $("#exampleInputPassword1").val("")
-                    return false
-                }
-            })
-        }, "json").done((result)=>{
-                if (result == true) {
-                if (document.getElementById("stayLoggedIn").checked == true) {
-                    localStorage.setItem("BUMstayLoggedIn", "yes")
-                    this.setState({loggedIn: true})
-                }
-                else {
-                    localStorage.setItem("BUMstayLoggedIn", "no")
-                    this.setState({loggedIn: true})
-                }}
-                else if (result == false) {
                     this.setState({loggedIn: false})
                 }
-        })
+            })
+        }, "json")
     }
     render() {
             // modals
